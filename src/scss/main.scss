@@ -123,7 +123,6 @@
                 .about-me{
                     width: 70%;
                     aspect-ratio: 1;
-                    padding: 10px;
                     border: 1px solid black;
                     border-radius: 15%;
                     display: flex;
@@ -132,11 +131,21 @@
                     justify-content: center;
                     background-color: white;
                     h1{
+                        font-size: 30px;
                         margin: 15px 0;
                     }
-                    p{
-                        margin: 10px 0;
-                        text-align: center;
+                    div.paragraph-container {
+                        width: 100%;
+                        height: 50%;
+                        padding: 10px 20px;
+                        p {
+                            margin: 10px 0;
+                            text-align: justify;
+                            span {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
                     }
                 }
             }
@@ -184,7 +193,7 @@
                     grid-template-columns: repeat(3, 1fr);
                     place-items: center center;
                     gap: 50px;
-                    animation: moveUp linear 15000ms infinite normal;
+                    animation: moveUp linear 12000ms infinite normal;
                     li{
                         width: 100px;
                         aspect-ratio: 1;

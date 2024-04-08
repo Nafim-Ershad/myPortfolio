@@ -3,7 +3,7 @@ import appStore from "./stateManager";
 import renderTechComponent from "./tech.component";
 import renderToolsComponent from "./tools.component";
 
-import "../scss/main.scss";
+import "./scss/main.scss";
 
 const techTab = document.querySelector<HTMLSpanElement>(".tab.tech");
 const toolsTab = document.querySelector<HTMLSpanElement>(".tab.tools");
