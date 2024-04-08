@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+  <title>Nafim Ershad</title>
+</head>
+
+<body>
+  <div id="app">
+    <nav id="navbar">
+      <div class="logo-container">LOGO</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+      </ul>
+    </nav>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="wave-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 50 1200 500">
+            <path id="wave1" fill="#273036" fill-opacity="1"
+              d="M0,160L48,154.7C96,149,192,139,288,133.3C384,128,480,128,576,128C672,128,768,128,864,133.3C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+            <path id="wave2" style="visibility: hidden" fill="#273036" fill-opacity="1"
+              d="M0,96L48,96C96,96,192,96,288,117.3C384,139,480,181,576,202.7C672,224,768,224,864,208C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+          </svg>
+        </div>
+        <div class="info-container">
+          <h1>Nafim Ershad</h1>
+          <p>A web desiner, an engineer and a tech enthusiast</p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="svg-container">
+        <svg id="visual" width="100%" viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <g fill="#273036">
+            <circle r="98" cx="38" cy="551"></circle>
+            <circle r="25" cx="632" cy="483"></circle>
+            <circle r="29" cx="392" cy="46"></circle>
+            <circle r="50" cx="786" cy="196"></circle>
+            <circle r="92" cx="407" cy="589"></circle>
+            <circle r="93" cx="882" cy="575"></circle>
+            <circle r="88" cx="459" cy="237"></circle>
+            <circle r="69" cx="233" cy="339"></circle>
+            <circle r="94" cx="39" cy="142"></circle>
+            <circle r="24" cx="595" cy="85"></circle>
+          </g>
+        </svg>
+      </div>
+      <div class="about-container">
+        <div class="photo-container">
+          <img src="./assets/images/my-photo.jpg" alt="my-pic" class="photo" />
+        </div>
+        <div class="about-me">
+          <h1>ABOUT ME</h1>
+          <div class="paragraph-container">
+            <p>
+              Hi, I am Nafim Ershad Inan from Dhaka, Bangladesh. I am an
+              Aeronautical Engineer majoring in Avionics Engineering.
+              Currently I am living in Dhaka, Bangladesh
+            </p>
+            <p>
+              I am someone fascinated with technology, specifically related to
+              computers. I like to code and learn new technologies and
+              techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="title">Skills</div>
+      <div class="tab-container">
+        <span class="tab tech active">Technology</span>
+        <span class="tab tools ">Tools</span>
+      </div>
+      <div class="skills-container">
+        <!-- WILL BE RENDERED USING TS -->
+      </div>
+    </section>
+    <section id="project"></section>
+  </div>
+  <script>
+    const tween = new KUTE.fromTo(
+      "#wave1", {
+        path: "#wave1",
+      }, {
+        path: "#wave2",
+      }, {
+        repeat: 999,
+        duration: 7000,
+        yoyo: true,
+      }
+    );
+
+    tween.start();
+  </script>
+  <script type="module" src="../src/main.ts"></script>
+</body>
+
+</html>
