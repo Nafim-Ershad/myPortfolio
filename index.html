@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Nafim Ershad</title>
 </head>
 
@@ -15,7 +15,7 @@
       <div class="logo-container">LOGO</div>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#tech-skills">Skills</a></li>
         <li><a href="#project">Projects</a></li>
       </ul>
     </nav>
@@ -86,26 +86,14 @@
         <!-- WILL BE RENDERED USING TS -->
       </div>
     </section>
-    <section id="education">
+    <section id="project">
+      <h1>PROJECTS</h1>
 
     </section>
-    <section id="project"></section>
+    <a class="contact-container" href="contact.html">
+      <span class="material-symbols-outlined">chat</span>
+    </a>
   </div>
-  <script>
-    const tween = new KUTE.fromTo(
-      "#wave1", {
-        path: "#wave1",
-      }, {
-        path: "#wave2",
-      }, {
-        repeat: 999,
-        duration: 7000,
-        yoyo: true,
-      }
-    );
-
-    tween.start();
-  </script>
   <script type="module" src="./src/main.ts"></script>
 </body>
 
