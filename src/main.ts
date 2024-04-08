@@ -1,7 +1,7 @@
-import appStore from "./stateManager";
+import appStore from "./utils/stateManager";
 
-import renderTechComponent from "./tech.component";
-import renderToolsComponent from "./tools.component";
+import renderTechComponent from "./components/tech.component";
+import renderToolsComponent from "./components/tools.component";
 
 import "./scss/main.scss";
 
@@ -10,6 +10,10 @@ const toolsTab = document.querySelector<HTMLSpanElement>(".tab.tools");
 
 const state = appStore.getState();
 
+
+if(screen.width < 1360){
+    window.alert("This is a work in progress. Currently view it in a desktop");
+}
 
 activateTab(state.skillTab);
 
