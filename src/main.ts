@@ -7,8 +7,6 @@ import renderToolsComponent from "./components/tools.component";
 
 import "./scss/main.scss";
 
-// const app = document.querySelector("#app");
-
 const techTab = document.querySelector<HTMLSpanElement>(".tab.tech");
 const toolsTab = document.querySelector<HTMLSpanElement>(".tab.tools");
 
