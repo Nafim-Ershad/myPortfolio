@@ -26,7 +26,7 @@ const messageLabel = document.querySelector<HTMLLabelElement>(".message-input~la
 // });
 
 formInput?.forEach((element, idx: number) => {
-    element.addEventListener("input", function(e: Event){
+    element.addEventListener("input", function(){
         if(element.value){
             formLabel[idx].classList.add("shrink");
         }else{
@@ -35,7 +35,7 @@ formInput?.forEach((element, idx: number) => {
     });
 });
 
-messageInput?.addEventListener("input", (e: Event) =>{
+messageInput?.addEventListener("input", () =>{
     console.log(messageInput.value);
     if(messageInput.value){
         messageLabel?.classList.add("shrink");
