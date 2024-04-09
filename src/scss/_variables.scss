@@ -8,3 +8,8 @@ $poppins: "Poppins", sans-serif;
 
 // COLORS
 $primaryColor: #273036;
+
+@mixin shrinkLabel(){
+    top: 5%;
+    font-size: 12px;
+}
