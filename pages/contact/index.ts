@@ -1,4 +1,4 @@
-import "./scss/contact.scss";
+import "../../src/scss/contact.scss";
 
 // const nameInput = document.querySelector<HTMLInputElement>(".name");
 // const nameLabel = document.querySelector<HTMLLabelElement>(".name~label");
