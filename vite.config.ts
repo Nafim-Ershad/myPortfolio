@@ -9,8 +9,8 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-            main: resolve(__dirname, 'index.html'),
-            nested: resolve(__dirname, 'pages/contact/index.html'),
+                main: resolve(__dirname, 'index.html'),
+                contact: resolve(__dirname, 'pages/contact/index.html'),
             },
         },
     },
