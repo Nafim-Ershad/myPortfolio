@@ -10,6 +10,8 @@ import "./scss/main.scss";
 const techTab = document.querySelector<HTMLSpanElement>(".tab.tech");
 const toolsTab = document.querySelector<HTMLSpanElement>(".tab.tools");
 
+// const skillContainer = document.querySelector<HTMLDivElement>(".skill-container");
+
 const state = appStore.getState();
 
 
@@ -48,7 +50,6 @@ toolsTab?.addEventListener("click", function(event){
     activateTab("tools");
     renderToolsComponent();
 });
-
 
 function activateTab(tabName: String): void{
     if(tabName === "tech"){

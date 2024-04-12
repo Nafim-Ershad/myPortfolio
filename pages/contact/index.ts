@@ -23,3 +23,5 @@ messageInput?.addEventListener("input", () =>{
         messageLabel?.classList.remove("shrink");
     }
 });
+// Using from the public folder that actually holds the js and json file
+particlesJS.load("particles", "../../scripts/particlesjs-config.json");

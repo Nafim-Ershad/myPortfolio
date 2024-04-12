@@ -4,7 +4,7 @@
       "value": 38,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1500
       }
     },
     "color": {
@@ -27,7 +27,7 @@
     },
     "opacity": {
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
