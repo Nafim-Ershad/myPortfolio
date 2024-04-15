@@ -13,3 +13,9 @@ $primaryColor: #273036;
     top: 5%;
     font-size: 12px;
 }
+
+
+@mixin shrinkLabelTXT(){
+    top: -10%;
+    font-size: 12px;
+}
