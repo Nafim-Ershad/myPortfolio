@@ -258,7 +258,7 @@
                         justify-content: space-between;
                         transform-style: preserve-3d;
                         transform: perspective(5000px) rotateX(var(--rotateY)) rotateY(var(--rotateX));
-                        box-shadow: 10px 10px 50px black;
+                        box-shadow: 5px 5px 20px black;
                         .card-title{
                             margin: 10px 0;
                             pointer-events: none;
