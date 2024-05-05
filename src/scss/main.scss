@@ -8,6 +8,11 @@
     font-family: $poppins;
 }
 
+:root{
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+}
+
 #app{
     position: relative;
     svg.design{
@@ -230,6 +235,55 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.5rem;
+            }
+            #project-component{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .project-container{
+                    width: 100%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .card-container{
+                        position: relative;
+                        width: 300px;
+                        height: 350px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        transform-style: preserve-3d;
+                        transform: perspective(5000px) rotateX(var(--rotateY)) rotateY(var(--rotateX));
+                        box-shadow: 10px 10px 50px black;
+                        .card-title{
+                            margin: 10px 0;
+                            pointer-events: none;
+                        }
+                        .short-description{
+                            height: 50%;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            pointer-events: none;
+                        }
+                        .tech-logos{
+                            width: 100%;
+                            height: 20%;
+                            margin: 10px 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            .tech-logo{
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

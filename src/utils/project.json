@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "name": "EN Electronics",
+      "description": "This is an e-commerce site that was built using NextJs, Sanity as CMS and Stripe API for payment simulation. It uses serverless backend",
+      "s_desc": "E-Commerce site made with NextJs, Sanity and Stripe API",
+      "src": [
+        "assets/svg/logos/Nextjs.svg",
+        "assets/svg/logos/sanity.svg",
+        "assets/svg/logos/stripe.svg"
+      ],
+      "url": "https://en-electronics.vercel.app/"
+    },
+    {
+      "name": "Expense Tracker",
+      "description": "This is an expense tracking app made using Vue, VITE, Pinia, Supabase and ChartJs. Vue is used as the frontend UI, Pinia for the state management and Supabase is used as the backend with its own Database. VITE is used to compile and ChartJs is used for making the chart. Vue-Router is used to route through between the chart and the tracker.",
+      "s_desc": "An expense tracking app used to make tracking expenses a lot easier. (WIP)",
+      "src": [
+        "assets/svg/logos/vue.svg",
+        "assets/svg/logos/supabase.svg",
+        "assets/svg/logos/pinia.svg",
+        "assets/svg/logos/vite.svg"
+      ],
+      "url": "https://expense-tracker-nafimershad.vercel.app/"
+    },
+    {
+      "name": "Weather App",
+      "description": "Its a weather app that was made with Vue, Pinia, VITE and weatherapi. Its an app that gets weather data from weatherapi and displays the weather condition depending on the city or country with the help of Vue.",
+      "s_desc": "A weather app that lets you know the current weather of a city or country. (WIP)",
+      "src": [
+        "assets/svg/logos/vue.svg",
+        "assets/svg/logos/pinia.svg",
+        "assets/svg/logos/vite.svg"
+      ],
+      "url": "https://weather-app-sepia-theta-47.vercel.app/"
+    }
+  ]
+}
