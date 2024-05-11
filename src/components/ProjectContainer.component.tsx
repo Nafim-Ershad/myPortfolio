@@ -16,7 +16,7 @@ function ProjectContainer(){
     return(
         <div className="project-container">
             {
-                data.projects.map((project: Project) => (<ProjectCard project={project}/>))
+                data.projects.map((project: Project, idx: number) => (<ProjectCard project={project} key={idx}/>))
             }
         </div>
     )
