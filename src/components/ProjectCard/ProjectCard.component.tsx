@@ -1,7 +1,8 @@
 import React, {useRef, useEffect} from "react";
-import TechLogo from "./TechLogo.component";
-import { Project_Card } from "../utils/Types";
+import TechIcon from "../TechIcon/TechIcon.component";
+import { Project_Card } from "../../utils/Types";
 
+import "./ProjectCard.styles.scss";
 
 function cardTilt(event: MouseEvent, card: HTMLDivElement){
     //Mouse Position
@@ -16,8 +17,8 @@ function cardTilt(event: MouseEvent, card: HTMLDivElement){
     const cardX = ((card.getBoundingClientRect().right - card.getBoundingClientRect().left) / 2) + card.getBoundingClientRect().left; 
     const cardY = ((card.getBoundingClientRect().bottom - card.getBoundingClientRect().top) / 2 ) + card.getBoundingClientRect().top; 
 
-    const offsetX = ((x - cardX) / cardX) * 15
-    const offsetY = ((y - cardY) / cardY) * 15
+    const offsetX = ((x - cardX) / cardX) * 10
+    const offsetY = ((y - cardY) / cardY) * 10
 
     card.style.setProperty('--rotateX', `${offsetX}deg`)
     card.style.setProperty('--rotateY', `${-1 * offsetY}deg`)
@@ -66,9 +67,9 @@ function ProjectCard({project}: Project_Card){
                     Visit Live -{'>'}
                 </a>
             </span>
-            <span className="tech-logos">
+            <span className="tech-icons">
                 {
-                   project.src.map((src:string) => <TechLogo src={src}/>) 
+                   project.src.map((src:string, idx:number) => <TechIcon src={src} key={idx}/>) 
                 }
             </span>
         </div>

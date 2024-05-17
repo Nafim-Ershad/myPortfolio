@@ -12,12 +12,7 @@
 <body>
   <div id="app">
     <nav id="navbar">
-      <div class="logo-container">LOGO</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#tech-skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+      <!-- USED REACT COMPONENT -->
     </nav>
     <section id="hero">
       <div class="hero-container">
@@ -39,7 +34,7 @@
     </section>
     <section id="about">
       <div class="svg-container">
-        <svg id="visual" width="100%" viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg"
+        <svg id="visual" width="100%" height="100%" viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
           <g fill="#273036">
             <circle r="98" cx="38" cy="551"></circle>
@@ -56,24 +51,7 @@
         </svg>
       </div>
       <div class="about-container">
-        <div class="photo-container">
-          <img src="./assets/images/my-photo.jpg" alt="my-pic" class="photo" />
-        </div>
-        <div class="about-me">
-          <h1>ABOUT ME</h1>
-          <div class="paragraph-container">
-            <p>
-              <span>Hi, I’m Nafim Ershad 👋</span><br/>
-
-              I’m an Aeronautical Engineer. My passion lies in engineering, where I excel at analytical problem solving.
-              Additionally, I’m a quick learner. I am eager to learn new technologies and techniques whenever I get the
-              chance. When I’m not learning, you’ll find me playing video games.
-            </p>
-            <p>
-              Looking forward to connecting with you!
-            </p>
-          </div>
-        </div>
+        <!-- Handled by REACT COMPONENT -->
       </div>
     </section>
     <section id="tech-skills">
@@ -92,12 +70,13 @@
         <!-- WILL BE RENDERED USING REACTJS -->
       </div>
     </section>
-    <a class="contact-container" href="./pages/contact/index.html">
+    <a id="contact-container" href="./pages/contact/index.html">
       <span class="material-symbols-outlined">chat</span>
     </a>
   </div>
   <script type="module" src="./src/main.ts"></script>
-  <script type="module" src="./src/components/ProjectContainer.component.tsx"></script> <!--REACT COMPONENT-->
+  <!--REACT COMPONENTS-->
+  <script type="module" src="./src/components/ReactComponents.tsx"></script>
 </body>
 
 </html>
