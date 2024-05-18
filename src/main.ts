@@ -17,7 +17,14 @@ const tween = new KUTE.fromTo(
 
 tween.start();
 
+// ALERT MESSAGE FOR NON-MOBILE FRIENDLY DESIGN
 
-if(screen.width < 1360){
-    window.alert("This is a work in progress. Currently view it in a desktop");
-}
+// if(screen.width < 1360){
+//     window.alert("This is a work in progress. Currently view it in a desktop");
+// }
+
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);

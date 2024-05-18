@@ -12,6 +12,7 @@
 :root{
     --rotateY: 0deg;
     --rotateX: 0deg;
+    --navbar-height: 70px;
 }
 html,
 body{
@@ -31,7 +32,7 @@ body{
     #navbar{
         width: 100%;
         max-width: 1920px;
-        height: 70px;
+        height: var(--navbar-height);
         padding: 0 15px;
         border-bottom: 2px solid black;
         position: sticky;
@@ -158,6 +159,14 @@ body{
                 text-transform: uppercase;
                 letter-spacing: 0.5rem;
             }
+            #project-component{
+                position: relative;
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             
         }
     }
@@ -190,6 +199,22 @@ body{
             background-color: rgb(238, 238, 238);
             span{
                 color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #app{
+        section{
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
+            &#hero{
+                .hero-container{
+                    .info-container{
+                        width: 90%;
+                    }
+                }
             }
         }
     }

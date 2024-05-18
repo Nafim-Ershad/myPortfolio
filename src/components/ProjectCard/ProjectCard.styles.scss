@@ -1,55 +1,70 @@
-.card-container{
-    position: relative;
-    width: 300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    transform-style: preserve-3d;
-    transform: perspective(5000px) rotateX(var(--rotateY)) rotateY(var(--rotateX));
-    box-shadow: 5px 5px 20px black;
-    .card-title{
-        margin: 10px 0;
-        pointer-events: none;
-    }
-    .short-description{
-        height: 50%;
-        padding: 0 10px;
+.card-bg{
+    .card-container{
+        position: relative;
+        width: 300px;
+        height: 350px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        text-align: center;
-        pointer-events: none;
-    }
-    .link{
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a{
-            width: 120px;
-            height: 100%;
-            border-radius: 8px;
+        justify-content: space-between;
+        transform-style: preserve-3d;
+        transform: perspective(5000px) rotateX(var(--rotateY)) rotateY(var(--rotateX));
+        box-shadow: 5px 5px 20px black;
+        .card-title{
+            margin: 10px 0;
+            pointer-events: none;
+        }
+        .short-description{
+            height: 50%;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            pointer-events: none;
+        }
+        .link{
+            width: 100%;
+            height: 10%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid black;
-            text-decoration: none;
-            color: black;
-            transition: color 200ms ease, border 200ms ease;
-            &:hover{
-                border: 2px solid red;
-                color: red;
+            a{
+                width: 120px;
+                height: 100%;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid black;
+                text-decoration: none;
+                color: black;
+                transition: color 200ms ease, border 200ms ease;
+                &:hover{
+                    border: 2px solid red;
+                    color: red;
+                }
             }
         }
+        .tech-icons{
+            width: 100%;
+            height: 20%;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
     }
-    .tech-icons{
-        width: 100%;
-        height: 20%;
-        margin: 10px 0;
+}
+
+@media screen and (max-width: 960px) {
+    .card-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }

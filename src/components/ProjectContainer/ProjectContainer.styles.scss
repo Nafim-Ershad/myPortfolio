@@ -1,14 +1,38 @@
-#project-component{
+.project-container{
+    position: relative;
     width: 100%;
-    height: 70%;
+    height: 90%;
+    padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px){
     .project-container{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        .arrow{
+            position: absolute;
+            top: 0;
+            width: 40px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 700;
+            cursor: pointer;
+            &.left{
+                left: 5px;
+            }
+            &.right{
+                right: 5px;
+            }
+        }
     }
 }

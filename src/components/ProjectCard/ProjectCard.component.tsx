@@ -29,7 +29,7 @@ function cardReset(card: HTMLDivElement){
     card.style.setProperty('--rotateY', `${0}deg`)
 }
 
-function ProjectCard({project}: Project_Card){
+function ProjectCard({project, num, current}: Project_Card){
     const ref = useRef<HTMLDivElement | null>(null);
 
     useEffect(()=>{
@@ -54,24 +54,31 @@ function ProjectCard({project}: Project_Card){
         }
     }, []);
 
+    const myStyles:React.CSSProperties = {
+        left: `${100 * num}%`,
+        transform: `translateX(${-100 * current}%)`
+    }
+
     return (
-        <div className="card-container" ref={ref}>
-            <h2 className="card-title">
-                {project.name}
-            </h2>
-            <span className="short-description">
-                {project.s_desc}
-            </span>
-            <span className="link">
-                <a href={project.url} target="__blank">
-                    Visit Live -{'>'}
-                </a>
-            </span>
-            <span className="tech-icons">
-                {
-                   project.src.map((src:string, idx:number) => <TechIcon src={src} key={idx}/>) 
-                }
-            </span>
+        <div className="card-bg" style={myStyles}>
+            <div className="card-container" ref={ref}>
+                <h2 className="card-title">
+                    {project.name}
+                </h2>
+                <span className="short-description">
+                    {project.s_desc}
+                </span>
+                <span className="link">
+                    <a href={project.url} target="__blank">
+                        Visit Live -{'>'}
+                    </a>
+                </span>
+                <span className="tech-icons">
+                    {
+                    project.src.map((src:string, idx:number) => <TechIcon src={src} key={idx}/>) 
+                    }
+                </span>
+            </div>
         </div>
     )
 }

@@ -7,5 +7,7 @@ export type Project = {
 }
 
 export interface Project_Card {
-    project: Project
+    project: Project,
+    num: number,
+    current: number
 }
