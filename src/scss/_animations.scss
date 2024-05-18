@@ -9,9 +9,11 @@
 
 @keyframes moveUp {
     0%{
-        transform: translate(0, 100%);
+        transform: translate(0, 0);
+        top: 100%;
     }
     100%{
         transform: translate(0, -100%);
+        top: 0;
     }
 }

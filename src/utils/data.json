@@ -65,6 +65,14 @@
       "src": "./assets/svg/logos/nextjs.svg"
     },
     {
+      "name": "Redux",
+      "src": "./assets/svg/logos/redux.svg"
+    },
+    {
+      "name": "Pinia",
+      "src": "./assets/svg/logos/pinia.svg"
+    },
+    {
       "name": "NodeJs",
       "src": "./assets/svg/logos/nodejs.svg"
     },

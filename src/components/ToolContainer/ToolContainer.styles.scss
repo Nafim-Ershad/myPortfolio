@@ -1,15 +1,16 @@
 .skills-container-tool{
+    position: absolute;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 50px 150px;
     place-items: center center;
-    animation: moveUp linear 5000ms infinite normal;
+    animation: moveUp linear 6000ms infinite normal;
 }
 
 @media screen and (max-width: 800px){
     .skills-container-tool{
         gap: 50px 100px;
-        animation: moveUp linear 10000ms infinite normal;
+        animation: moveUp linear 5000ms infinite normal;
     }
 }
