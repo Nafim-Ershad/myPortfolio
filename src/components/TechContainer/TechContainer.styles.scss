@@ -1,0 +1,15 @@
+.skills-container-tech{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 50px 150px;
+    place-items: center center;
+    animation: moveUp linear 10000ms infinite normal;
+}
+
+@media screen and (max-width: 800px){
+    .skills-container-tech{
+        gap: 50px 100px;
+        animation: moveUp linear 20000ms infinite normal;
+    }
+}

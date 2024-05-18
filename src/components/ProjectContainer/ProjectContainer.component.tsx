@@ -8,7 +8,7 @@ import { type Project } from '../../utils/Types';
 import ProjectCard from '../ProjectCard/ProjectCard.component';
 
 // Project Info Data
-import json from "../../utils/project.json";
+import json from "../../utils/data.json";
 
 const data = JSON.parse(JSON.stringify(json))
 

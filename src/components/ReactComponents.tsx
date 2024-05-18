@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import React from "react";
 
 import NavBarComponent from "./NavBar/NavBar.component";
+import SkillContainerComponent from "./SkillContainer/SkillContainer.component";
 import AboutContainerComponent from "./AboutContainer/AboutContainer.component";
 import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
@@ -20,6 +21,15 @@ const aboutContainer = document.querySelector(".about-container");
 if(aboutContainer){
     createRoot(aboutContainer).render(
         <AboutContainerComponent/>
+    )
+}
+
+
+// TECH AND TOOL CONTAINER
+const techSkillContainer = document.getElementById("tech-skills");
+if(techSkillContainer){
+    createRoot(techSkillContainer).render(
+        <SkillContainerComponent/>
     )
 }
 

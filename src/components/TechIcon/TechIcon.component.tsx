@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./techIcon.styyles.scss";
+import "./techIcon.styles.scss";
 
 function TechIcon(props: any){
     return(

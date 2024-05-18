@@ -5,7 +5,7 @@
       "description": "This is an e-commerce site that was built using NextJs, Sanity as CMS and Stripe API for payment simulation. It uses serverless backend",
       "s_desc": "E-Commerce site made with NextJs, Sanity and Stripe API",
       "src": [
-        "assets/svg/logos/Nextjs.svg",
+        "assets/svg/logos/nextjs.svg",
         "assets/svg/logos/sanity.svg",
         "assets/svg/logos/stripe.svg"
       ],
@@ -33,6 +33,82 @@
         "assets/svg/logos/vite.svg"
       ],
       "url": "https://weather-app-sepia-theta-47.vercel.app/"
+    }
+  ],
+  "techSkills": [
+    {
+      "name": "HTML5",
+      "src": "./assets/svg/logos/html5.svg"
+    },
+    {
+      "name": "CSS3",
+      "src": "./assets/svg/logos/css.svg"
+    },
+    {
+      "name": "JS",
+      "src": "./assets/svg/logos/js.svg"
+    },
+    {
+      "name": "TS",
+      "src": "./assets/svg/logos/ts.svg"
+    },
+    {
+      "name": "React14",
+      "src": "./assets/svg/logos/react.svg"
+    },
+    {
+      "name": "Vue",
+      "src": "./assets/svg/logos/vue.svg"
+    },
+    {
+      "name": "NextJs",
+      "src": "./assets/svg/logos/nextjs.svg"
+    },
+    {
+      "name": "NodeJs",
+      "src": "./assets/svg/logos/nodejs.svg"
+    },
+    {
+      "name": "ExpressJs",
+      "src": "./assets/svg/logos/expressjs.svg"
+    },
+    {
+      "name": "C++",
+      "src": "./assets/svg/logos/cpp.svg"
+    },
+    {
+      "name": "Python",
+      "src": "./assets/svg/logos/python.svg"
+    },
+    {
+      "name": "Godot",
+      "src": "./assets/svg/logos/godot.svg"
+    },
+    {
+      "name": "Git",
+      "src": "./assets/svg/logos/git.svg"
+    }
+  ],
+  "toolSkills":[
+    {
+      "name": "MS Word",
+      "src": "./assets/svg/logos/word.svg"
+    },
+    {
+      "name": "MS Excel",
+      "src": "./assets/svg/logos/excel.svg"
+    },
+    {
+      "name": "MS Power Point",
+      "src": "./assets/svg/logos/powerpoint.svg"
+    },
+    {
+      "name": "Solid Works",
+      "src": "./assets/svg/logos/solidworks.svg"
+    },
+    {
+      "name": "MATLAB",
+      "src": "./assets/svg/logos/matlab.svg"
     }
   ]
 }

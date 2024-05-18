@@ -1,9 +1,11 @@
+
+
 import KUTE from "kute.js";
 
 import appStore from "./utils/stateManager";
 
-import renderTechComponent from "./components/tech.component";
-import renderToolsComponent from "./components/tools.component";
+// import renderTechComponent from "./components/tech.component";
+// import renderToolsComponent from "./components/tools.component";
 
 import "./scss/main.scss";
 
@@ -42,14 +44,17 @@ techTab?.addEventListener("click", function(event){
     event.preventDefault();
 
     activateTab("tech");
-    renderTechComponent();
+
+    console.log(appStore.getState())
+
 });
 
 toolsTab?.addEventListener("click", function(event){
     event.preventDefault();
 
     activateTab("tools");
-    renderToolsComponent();
+
+    console.log(appStore.getState())
 });
 
 function activateTab(tabName: String): void{
@@ -57,12 +62,12 @@ function activateTab(tabName: String): void{
         toolsTab?.classList.remove("active");
         techTab?.classList.add("active");
         
-        renderTechComponent();
+        appStore.setState({skillTab: "tech"})
     }
     else if(tabName === "tools"){
         techTab?.classList.remove("active");
         toolsTab?.classList.add("active");
-
-        renderToolsComponent();
+        
+        appStore.setState({skillTab: "tool"})
     }
 }

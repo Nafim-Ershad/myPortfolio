@@ -133,38 +133,14 @@ body{
                     }
                 }
             }
-            .skills-container{
+            #skills-component{
                 width: 75%;
                 height: 55%;
                 position: relative;
-                overflow-y: hidden;
+                overflow: hidden;
                 &:hover{
-                    ul{
+                    div{
                         animation-play-state: paused;
-                    }
-                }
-                ul{
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    place-items: center center;
-                    gap: 50px;
-                    animation: moveUp linear 12000ms infinite normal;
-                    li{
-                        width: 100px;
-                        aspect-ratio: 1;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        list-style: none;
-                        svg{
-                            width: 100%;
-                            height: 100%;
-                            transition: transform 500ms ease-in-out;
-                            &:hover{
-                                transform: scale(1.2);
-                            }
-                        }
                     }
                 }
             }
