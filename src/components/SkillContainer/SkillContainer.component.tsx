@@ -5,8 +5,8 @@ import ToolContainerComponent from '../ToolContainer/ToolContainer.component';
 
 const SkillContainerComponent = ():React.ReactNode => {
 
-    const techTab = useRef(null);
-    const toolTab = useRef(null);
+    const techTab = useRef<HTMLElement>(null);
+    const toolTab = useRef<HTMLElement>(null);
 
     const [skillTab, setskillTab] = useState<string>("tech");
 
@@ -18,7 +18,7 @@ const SkillContainerComponent = ():React.ReactNode => {
     const handleSkillChange = (e: React.MouseEvent, skill: string): void => {
         removeActiveClass();
 
-        e.target?.classList.add("active");
+        (e.target as HTMLElement).classList.add("active");
 
         setskillTab(skill);
     }
