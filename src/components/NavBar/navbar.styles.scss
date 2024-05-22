@@ -48,7 +48,7 @@
         width: max-content;
         position: absolute;
         top: var(--hamburger-margin);
-        right: var(--hamburger-margin);
+        right: calc(var(--hamburger-margin) + 12px);
         display: flex;
         flex-direction: column;
         gap: var(--hamburger-gap);
@@ -109,6 +109,7 @@
     .mobile_nav{
         min-height: 100vh;
         width: var(--mobile-nav-width);
+        padding: 0 20px;
         padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
         position: fixed;
         top: 0;

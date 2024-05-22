@@ -5,7 +5,9 @@ import "./navbar.styles.scss";
 const NavBarComponent = (): React.ReactNode => {
     return(
         <>
-            <div className="logo-container">LOGO</div>
+            <div className="logo-container">
+                <p>nafim ershad</p>
+            </div>
         {/* Desktop */}
             <>
                 <ul className='desktop_nav'>
