@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20.12.6",
     "@types/react-dom": "^18.3.0",
     "sass": "^1.74.1",
@@ -16,6 +17,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "kute.js": "^2.2.4",
     "particlesjs": "^2.2.3",
     "react": "^18.3.1",

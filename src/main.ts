@@ -1,6 +1,10 @@
 import KUTE from "kute.js";
+import AOS from "aos";
 
 import "./scss/main.scss";
+
+
+AOS.init();
 
 // Wave Animation
 const tween = new KUTE.fromTo(

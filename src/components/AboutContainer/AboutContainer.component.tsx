@@ -4,10 +4,10 @@ import "./AboutContainer.component.scss";
 const AboutContainerComponent = () => {
   return (
     <div className="whole-container">
-        <div className="photo-container">
+        <div className="photo-container" data-aos="fade-right">
             <img src="./assets/images/my-photo.jpg" alt="my-pic" className="photo" />
         </div>
-        <div className="about-me-container">
+        <div className="about-me-container" data-aos="fade-left">
             <div className="about-me">
                 <h1>ABOUT ME</h1>
                 <div className="paragraph-container">
