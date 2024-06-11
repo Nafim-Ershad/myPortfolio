@@ -26,11 +26,11 @@ const TechBoxComponent = ({src, name}: TechType): React.ReactNode => {
     // console.log((event.target as HTMLElement).offsetLeft, (event.target as HTMLElement).offsetTop);
   }
 
-  const handleMouseEnter = (event: MouseEvent) => {
+  const handleMouseEnter = () => {
     setShowToolTip(true);
   }
 
-  const handleMouseLeave = (event: MouseEvent) => {
+  const handleMouseLeave = () => {
     setShowToolTip(false);
   }
 

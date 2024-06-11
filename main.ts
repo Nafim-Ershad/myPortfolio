@@ -1,7 +1,7 @@
 import KUTE from "kute.js";
 import AOS from "aos";
 
-import "./scss/main.scss";
+import "./src/scss/main.scss";
 
 
 AOS.init();
@@ -32,4 +32,5 @@ tween.start();
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 particlesJS.load('particles', './scripts/particlejs-bg-config.json')
