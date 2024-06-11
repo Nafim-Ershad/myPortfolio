@@ -45,11 +45,11 @@
       "src": "./assets/svg/logos/css.svg"
     },
     {
-      "name": "JS",
+      "name": "JavaScript",
       "src": "./assets/svg/logos/js.svg"
     },
     {
-      "name": "TS",
+      "name": "TypeScript",
       "src": "./assets/svg/logos/ts.svg"
     },
     {
