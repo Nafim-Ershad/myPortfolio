@@ -28,8 +28,12 @@ const AboutContainerComponent = () => {
         </div>
 
         <div className="resume-container">
+            
             <a href={resume} download="Nafim Ershad Inan">
-                Resume
+                <span className="material-symbols-outlined">
+                    download
+                </span>
+                Résumé
             </a>
         </div>
     </div>

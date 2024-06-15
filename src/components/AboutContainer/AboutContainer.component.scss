@@ -68,6 +68,7 @@
         bottom: 10%;
         height: 4rem;
         aspect-ratio: 16/9;
+        padding: 0 0.25rem;
         border: 2px solid black;
         border-radius: 1rem;
         background-color: black;
@@ -76,8 +77,12 @@
         transition: background-color 300ms ease;
         &:hover{
             background-color: white;
+            
             a{
                 color: black;
+                span{
+                    color: black;
+                }
             }
         }
         a{
@@ -85,10 +90,15 @@
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             text-decoration: none;
             color: white;
             transition: color 300ms ease;
+            
+            span{
+                color: white;
+                transition: color 300ms ease;
+            }
         }
     }
 }
