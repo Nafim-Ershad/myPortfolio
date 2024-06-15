@@ -21,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "pages/contact/contact.ts", "public/scripts/particles.js", "main.ts"],
+  "include": ["src", "pages/contact/contact.ts", "public/scripts/particles.js"],
   "exclude": ["node_modules"]
 }
