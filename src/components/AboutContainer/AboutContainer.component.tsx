@@ -1,6 +1,8 @@
 import React from 'react';
 import "./AboutContainer.component.scss";
 
+import resume from "../../../public/assets/files/Nafim Ershad Inan.pdf";
+
 const AboutContainerComponent = () => {
   return (
     <div className="whole-container">
@@ -23,6 +25,12 @@ const AboutContainerComponent = () => {
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div className="resume-container">
+            <a href={resume} download="Nafim Ershad Inan">
+                Resume
+            </a>
         </div>
     </div>
   )
