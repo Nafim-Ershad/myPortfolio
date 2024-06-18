@@ -111,6 +111,22 @@
       "src": "./assets/svg/logos/powerpoint.svg"
     },
     {
+      "name": "Google Docs",
+      "src": "./assets/svg/logos/docs.svg"
+    },
+    {
+      "name": "Google Sheets",
+      "src": "./assets/svg/logos/sheets.svg"
+    },
+    {
+      "name": "Adobe PhotoShop CC",
+      "src": "./assets/svg/logos/photoshop.svg"
+    },
+    {
+      "name": "Adobe Illustrator CC",
+      "src": "./assets/svg/logos/illustrator.svg"
+    },
+    {
       "name": "Solid Works",
       "src": "./assets/svg/logos/solidworks.svg"
     },
