@@ -33,6 +33,15 @@
         "assets/svg/logos/vite.svg"
       ],
       "url": "https://weather-app-sepia-theta-47.vercel.app/"
+    },
+    {
+      "name": "Pong Game",
+      "description": "Its a pong game made using the canvas element of HTML.",
+      "s_desc": "Pong game with basic functionalities. (WIP)",
+      "src": [
+        "assets/svg/logos/vite.svg"
+      ],
+      "url": "https://pong-game-eight-kappa.vercel.app/"
     }
   ],
   "techSkills": [
