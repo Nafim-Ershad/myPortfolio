@@ -154,8 +154,8 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );    
             }
             img{
-                width: 75%;
                 height: 75%;
+                aspect-ratio: 1;
                 &.linkedin-logo{
                     filter: invert(1);
                 }

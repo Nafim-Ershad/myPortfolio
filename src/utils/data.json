@@ -9,7 +9,8 @@
         "assets/svg/logos/sanity.svg",
         "assets/svg/logos/stripe.svg"
       ],
-      "url": "https://en-electronics.vercel.app/"
+      "url": "https://en-electronics.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/en-electronics"
     },
     {
       "name": "Expense Tracker",
@@ -21,7 +22,8 @@
         "assets/svg/logos/pinia.svg",
         "assets/svg/logos/vite.svg"
       ],
-      "url": "https://expense-tracker-nafimershad.vercel.app/"
+      "url": "https://expense-tracker-nafimershad.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/expense-tracker"
     },
     {
       "name": "Weather App",
@@ -32,7 +34,8 @@
         "assets/svg/logos/pinia.svg",
         "assets/svg/logos/vite.svg"
       ],
-      "url": "https://weather-app-sepia-theta-47.vercel.app/"
+      "url": "https://weather-app-sepia-theta-47.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/weather-app"
     },
     {
       "name": "Pong Game",
@@ -41,7 +44,19 @@
       "src": [
         "assets/svg/logos/vite.svg"
       ],
-      "url": "https://pong-game-eight-kappa.vercel.app/"
+      "url": "https://pong-game-eight-kappa.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/pong-game"
+    },
+    {
+      "name": "Dashboard",
+      "description": "Its a dashboard made with reactJs and using the shadcn ui library. Its inspired by the black and white theme of schadcn.",
+      "s_desc": "Dashboard for any type of ecommerce site or other type of business web.",
+      "src": [
+        "assets/svg/logos/react.svg",
+        "assets/svg/logos/ts.svg"
+      ],
+      "url": "https://shadcn-dashboard-eta.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/shadcn-dashboard"
     }
   ],
   "techSkills": [

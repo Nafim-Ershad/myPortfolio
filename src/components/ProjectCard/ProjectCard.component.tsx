@@ -68,11 +68,18 @@ function ProjectCard({project, num, current}: Project_Card){
                 <span className="short-description">
                     {project.s_desc}
                 </span>
-                <span className="link">
-                    <a href={project.url} target="__blank">
-                        Visit Live -{'>'}
-                    </a>
-                </span>
+                <div className="links">
+                    <span className="project-link">
+                        <a href={project.url} target="__blank">
+                            Visit Live -{'>'}
+                        </a>
+                    </span>
+                    <span className="github-link">
+                        <a href={project.git} target="__blank">
+                            <img src="assets/svg/logos/github.svg" alt="github"/>
+                        </a>
+                    </span>
+                </div>
                 <span className="tech-icons">
                     {
                     project.src.map((src:string, idx:number) => <TechIcon src={src} key={idx}/>) 

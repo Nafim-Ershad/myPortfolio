@@ -3,7 +3,8 @@ export type Project = {
     description: string, 
     s_desc: string, 
     src: string[],
-    url: string
+    url: string,
+    git: string
 }
 
 export interface Project_Card {
