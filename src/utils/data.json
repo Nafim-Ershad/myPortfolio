@@ -13,6 +13,17 @@
       "git": "https://github.com/Nafim-Ershad/en-electronics"
     },
     {
+      "name": "Dashboard",
+      "description": "Its a dashboard made with reactJs and using the shadcn ui library. Its inspired by the black and white theme of schadcn.",
+      "s_desc": "Dashboard for any type of ecommerce site or other type of business web.",
+      "src": [
+        "assets/svg/logos/react.svg",
+        "assets/svg/logos/ts.svg"
+      ],
+      "url": "https://shadcn-dashboard-eta.vercel.app/",
+      "git": "https://github.com/Nafim-Ershad/shadcn-dashboard"
+    },
+    {
       "name": "Expense Tracker",
       "description": "This is an expense tracking app made using Vue, VITE, Pinia, Supabase and ChartJs. Vue is used as the frontend UI, Pinia for the state management and Supabase is used as the backend with its own Database. VITE is used to compile and ChartJs is used for making the chart. Vue-Router is used to route through between the chart and the tracker.",
       "s_desc": "An expense tracking app used to make tracking expenses a lot easier. (WIP)",
@@ -46,18 +57,8 @@
       ],
       "url": "https://pong-game-eight-kappa.vercel.app/",
       "git": "https://github.com/Nafim-Ershad/pong-game"
-    },
-    {
-      "name": "Dashboard",
-      "description": "Its a dashboard made with reactJs and using the shadcn ui library. Its inspired by the black and white theme of schadcn.",
-      "s_desc": "Dashboard for any type of ecommerce site or other type of business web.",
-      "src": [
-        "assets/svg/logos/react.svg",
-        "assets/svg/logos/ts.svg"
-      ],
-      "url": "https://shadcn-dashboard-eta.vercel.app/",
-      "git": "https://github.com/Nafim-Ershad/shadcn-dashboard"
     }
+    
   ],
   "techSkills": [
     {
