@@ -86,6 +86,10 @@
       "src": "./assets/svg/logos/vue.svg"
     },
     {
+      "name": "Nuxt3",
+      "src": "./assets/svg/logos/nuxt.svg"
+    },
+    {
       "name": "NextJs",
       "src": "./assets/svg/logos/nextjs.svg"
     },
@@ -152,12 +156,46 @@
       "src": "./assets/svg/logos/illustrator.svg"
     },
     {
+      "name": "MongoDB",
+      "src": "./assets/svg/logos/mongodb.svg"
+    },
+    {
+      "name": "Postgres",
+      "src": "./assets/svg/logos/postgres.svg"
+    },
+    {
       "name": "Solid Works",
       "src": "./assets/svg/logos/solidworks.svg"
     },
     {
       "name": "MATLAB",
       "src": "./assets/svg/logos/matlab.svg"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Technical Executive",
+      "dept": "Quality Assurance",
+      "company": "Astra Airways Ltd.",
+      "from": "Sep, 2024",
+      "to": "Sep, 2024",
+      "works": [
+        "Inspected an ATR72-212 aircraft before scheduled flight",
+        "Researched aircraft compliance regulations set by the aviation authority of the country",
+        "Documented everything done related to aircraft and the organization"
+      ]
+    },
+    {
+      "title": "Trainee Engineer Intern",
+      "dept": "",
+      "company": "Biman Bangladesh Airlines Ltd.",
+      "from": "Jan, 2023",
+      "to": "Feb, 2023",
+      "works": [
+        "Gained knowledge on the industry standards and how the industry operates",
+        "Had hands on experience on the NDT process of aircraft structure",
+        "Gained experience in reading and understanding the aircraft documentation such as AMM, ANO, CAR etc."
+      ]
     }
   ]
 }
