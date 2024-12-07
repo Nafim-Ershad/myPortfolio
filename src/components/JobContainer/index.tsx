@@ -4,6 +4,15 @@ import './styles.scss';
 
 import json from "../../utils/data.json";
 
+type ExpType = {
+    title: string,
+    dept?: string,
+    company: string,
+    from: string,
+    to: string,
+    works: string[]
+}
+
 const { experience } = JSON.parse(JSON.stringify(json));
 
 function Index(): React.ReactNode {
@@ -11,7 +20,7 @@ function Index(): React.ReactNode {
     return (
         <>
         {
-            experience.map((exp) => {
+            experience.map((exp: ExpType) => {
                 return(
                     <div className="job-container">
                         <div className="job-heading">
