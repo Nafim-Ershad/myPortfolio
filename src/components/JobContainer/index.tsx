@@ -22,7 +22,7 @@ function Index(): React.ReactNode {
         {
             experience.map((exp: ExpType) => {
                 return(
-                    <div className="job-container">
+                    <div className="job-container" data-aos="fade-up">
                         <div className="job-heading">
                             <div className="job-title">
                                 <div className="name">{exp.title}</div>

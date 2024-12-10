@@ -17,3 +17,12 @@
         top: 0;
     }
 }
+
+@keyframes arrowPointRight {
+    0%{
+        left: -1%;
+    }
+    100%{
+        left: 0.5%;
+    }
+}

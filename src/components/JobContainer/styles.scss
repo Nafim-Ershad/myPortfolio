@@ -1,4 +1,5 @@
 @import "../../scss/variables";
+@import "../../scss/animations";
 
 .job-container{
     position: relative;
@@ -18,7 +19,8 @@
         aspect-ratio: 1;
         border-left: 0.75rem solid black;
         border-top: 0.75rem solid transparent;
-        border-bottom: 0.75rem solid transparent; /* Change color as needed */
+        border-bottom: 0.75rem solid transparent;
+        animation: 1s ease-in-out 3s infinite alternate arrowPointRight;
     }
 
     .job-heading{
