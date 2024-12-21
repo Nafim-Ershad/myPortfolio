@@ -17,7 +17,7 @@
         left: -1.25rem;
         top: 1rem;
         aspect-ratio: 1;
-        border-left: 0.75rem solid black;
+        border-left: 0.75rem solid rgb(255, 53, 53);
         border-top: 0.75rem solid transparent;
         border-bottom: 0.75rem solid transparent;
         animation: 1s ease-in-out 3s infinite alternate arrowPointRight;
@@ -36,6 +36,9 @@
             font-weight: 700;
             font-size: 1.25rem;
             letter-spacing: 0.10rem;
+            div{
+                width: fit-content;
+            }
         }
         .job-subtitle{
             width: 100%;
@@ -45,6 +48,33 @@
             font-weight: 300;
             font-size: 0.75rem;
             font-style: italic;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .job-container{  
+        gap: 1rem;
+        &::after{
+            top: 0.75rem;
+            border-left: 0.5rem solid rgb(255, 53, 53);
+            border-top: 0.5rem solid transparent;
+            border-bottom: 0.5rem solid transparent; 
+        }
+        .job-heading{
+            gap: 0.15rem;
+            .job-title{
+                gap: 0.1rem;
+                font-size: 0.75rem;
+                letter-spacing: 0.05rem;
+            }
+            .job-subtitle{   
+                font-size: 0.6rem;
+            }
+        }
+
+        .job-description{
+            font-size: 0.75rem;
         }
     }
 }
