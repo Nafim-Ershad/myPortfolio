@@ -16,7 +16,6 @@ type ExpType = {
 const { experience } = JSON.parse(JSON.stringify(json));
 
 function Index(): React.ReactNode {
-    console.log(experience)
     return (
         <>
         {

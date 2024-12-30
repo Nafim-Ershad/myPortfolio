@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { circularNumber } from '../../utils/utils';
+
 import "./ProjectContainer.styles.scss";
 
 // Types import
@@ -12,9 +14,6 @@ import json from "../../utils/data.json";
 
 const data = JSON.parse(JSON.stringify(json))
 
-function circularNumber(num: number, range: number): number{
-    return (Math.abs(num) % range);
-}
 
 function ProjectContainer(){
     const [current, setCurrent] = useState<number>(0);

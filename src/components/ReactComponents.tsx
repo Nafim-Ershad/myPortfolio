@@ -6,8 +6,9 @@ import React from "react";
 import NavBarComponent from "./NavBar/NavBar.component";
 import SkillContainerComponent from "./SkillContainer/SkillContainer.component";
 import AboutContainerComponent from "./AboutContainer/AboutContainer.component";
-import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
+import EducationContainer from "./EducationContainer";
 import JobContainer from "./JobContainer";
+import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
 // NAVBAR
 const navbarComponent = document.getElementById("navbar"); 
@@ -25,7 +26,15 @@ if(aboutContainer){
     )
 }
 
-// ABOUT CONTAINER
+// EDUCATION CONTAINER
+const educationContainer = document.querySelector('#education .container');
+if(educationContainer){
+    createRoot(educationContainer).render(
+        <EducationContainer/>
+    )
+}
+
+// EXPERIENCE CONTAINER
 const jobContainer = document.querySelector("#experience .container");
 if(jobContainer){
     createRoot(jobContainer).render(

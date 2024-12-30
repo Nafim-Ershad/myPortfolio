@@ -170,7 +170,52 @@
     {
       "name": "MATLAB",
       "src": "./assets/svg/logos/matlab.svg"
+    },
+    {
+      "name": "WordPress",
+      "src": "./assets/svg/logos/wordpress.svg"
+    },
+    {
+      "name": "Figma",
+      "src": "./assets/svg/logos/figma.svg"
+    },
+    {
+      "name": "Framer",
+      "src": "./assets/svg/logos/framer.svg"
     }
+  ],
+  "education": [
+    
+  {
+    "level": "Bachelor's of Science",
+    "year": "2024",
+    "institute": "Military Institute of Science and Technology (MIST)",
+    "area": "Dhaka, Bangladesh",
+    "department": "Aeronautical Engineering, Avionics",
+    "score": "3.63",
+    "total": "4.00",
+    "imgURL": "/assets/images/logo/MIST.webp"
+  },
+  {
+    "level": "Higher School Certificate (H.S.C)",
+    "year": "2019",
+    "institute": "Rajuk Uttara Model College",
+    "area": "Dhaka, Bangladesh",
+    "department": "Science",
+    "score": "5.00",
+    "total": "5.00",
+    "imgURL": "/assets/images/logo/RUMC.webp"
+  },
+  {
+    "level": "Secondary School Certificate (S.S.C)",
+    "year": "2017",
+    "institute": "Rajuk Uttara Model College",
+    "area": "Dhaka, Bangladesh",
+    "department": "Science",
+    "score": "5.00",
+    "total": "5.00",
+    "imgURL": "/assets/images/logo/RUMC.webp"
+  }
   ],
   "experience": [
     {

@@ -17,6 +17,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+    "@tmugo/react-infinite-carousel": "^2.0.4",
     "@tsparticles/engine": "^3.4.0",
     "aos": "^2.3.4",
     "kute.js": "^2.2.4",

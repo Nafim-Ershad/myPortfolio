@@ -107,6 +107,7 @@ body{
             //     width: 100%;
             //     z-index: -1;
             // }
+            margin-bottom: 3rem;
             #particles{
                 position: absolute;
                 top: 0; left: 0;
@@ -118,6 +119,30 @@ body{
             .about-container{
                 height: 100%;
                 width: 100%;
+            }
+        }
+        &#education{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .title{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+            }
+            .container{
+                position: relative;
+                width: 100%;
+                min-height: calc(100vh - 100px);
+                margin: 1rem 0.5rem;
+                padding: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow-x: hidden;
             }
         }
         &#experience{
@@ -250,6 +275,20 @@ body{
     }
 }
 
+@media screen and (max-width: 768px) {
+    #app{
+        section{
+            &#education{
+                .container{
+                    min-height: 0;
+                    height: fit-content;
+                    margin: 1.5rem 0;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 400px) {
     #app{
         section{
@@ -269,6 +308,15 @@ body{
                     font-weight: 700;
                     text-transform: uppercase;
                     letter-spacing: 0.1rem;
+                }
+            }
+            &#projects{
+                .title{
+                    margin-bottom: 0.625rem;
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1rem; 
                 }
             }
         }
