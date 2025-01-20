@@ -1,12 +1,21 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
 import KUTE from "kute.js";
 import AOS from "aos";
+
+import App from './src/components/App';
 
 // import { tsParticles } from "tsparticles";
 
 import "./src/scss/main.scss";
 
-
 AOS.init();
+
+// Generate React
+const root = document.getElementById('app');
+if(root){
+    createRoot(root).render(React.createElement(App));
+}
 
 // Wave Animation
 const tween = new KUTE.fromTo(

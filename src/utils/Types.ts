@@ -12,3 +12,8 @@ export interface Project_Card {
     num: number,
     current: number
 }
+
+export interface iComponentLoad {
+    container: HTMLElement | Element | null;
+    component: React.ReactNode;
+}

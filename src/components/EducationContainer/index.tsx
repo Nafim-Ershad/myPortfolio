@@ -41,7 +41,7 @@ export default function Index(){
             <div className='carousel-tracker' style={{ "--index-number": index} as CSSProperties}>
                 {
                     education.map((ed: EdType) => (
-                        <EducationCard edContent={ed}/>
+                        <EducationCard edContent={ed} key={Math.random() * 100}/>
                     ))
                 }
             </div>
