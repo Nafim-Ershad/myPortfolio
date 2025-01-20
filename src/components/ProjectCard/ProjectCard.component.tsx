@@ -70,9 +70,11 @@ function ProjectCard({project, num, current}: Project_Card){
                 </span>
                 <div className="links">
                     <span className="project-link">
-                        <a href={project.url} target="__blank">
-                            Visit Live -{'>'}
-                        </a>
+                        { project.url &&
+                            <a href={project.url} target="__blank">
+                                Visit Live -{'>'}
+                            </a>
+                        }
                     </span>
                     <span className="github-link">
                         <a href={project.git} target="__blank">

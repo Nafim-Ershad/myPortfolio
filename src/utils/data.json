@@ -1,6 +1,17 @@
 {
   "projects": [
     {
+      "name": "Image Viewer",
+      "s_desc": "An electron app for viewing images",
+      "description": "This is an image viewing electron app that can be used to view images. It supports various image formats and provides a user-friendly interface for browsing and viewing images. The app is built using Electron, making it cross-platform and easy to install on different operating systems.",
+      "src": [
+        "assets/svg/logos/electronjs.svg",
+        "assets/svg/logos/js.svg"
+      ],
+      "url": "",
+      "git": "https://github.com/Nafim-Ershad/en-electronics"
+    },
+    {
       "name": "EN Electronics",
       "description": "This is an e-commerce site that was built using NextJs, Sanity as CMS and Stripe API for payment simulation. It uses serverless backend",
       "s_desc": "E-Commerce site made with NextJs, Sanity and Stripe API",
@@ -41,6 +52,7 @@
       "description": "Its a weather app that was made with Vue, Pinia, VITE and weatherapi. Its an app that gets weather data from weatherapi and displays the weather condition depending on the city or country with the help of Vue.",
       "s_desc": "A weather app that lets you know the current weather of a city or country. (WIP)",
       "src": [
+        "assets/svg/logos/ts.svg",
         "assets/svg/logos/vue.svg",
         "assets/svg/logos/pinia.svg",
         "assets/svg/logos/vite.svg"
@@ -53,6 +65,7 @@
       "description": "Its a pong game made using the canvas element of HTML.",
       "s_desc": "Pong game with basic functionalities. (WIP)",
       "src": [
+        "assets/svg/logos/js.svg",
         "assets/svg/logos/vite.svg"
       ],
       "url": "https://pong-game-eight-kappa.vercel.app/",
@@ -118,12 +131,8 @@
       "src": "./assets/svg/logos/python.svg"
     },
     {
-      "name": "Godot",
-      "src": "./assets/svg/logos/godot.svg"
-    },
-    {
-      "name": "Git",
-      "src": "./assets/svg/logos/git.svg"
+      "name": "ElectronJs",
+      "src": "./assets/svg/logos/electronjs.svg"
     }
   ],
   "toolSkills":[
@@ -162,6 +171,14 @@
     {
       "name": "Postgres",
       "src": "./assets/svg/logos/postgres.svg"
+    },
+    {
+      "name": "Git",
+      "src": "./assets/svg/logos/git.svg"
+    },
+    {
+      "name": "Godot",
+      "src": "./assets/svg/logos/godot.svg"
     },
     {
       "name": "Solid Works",
