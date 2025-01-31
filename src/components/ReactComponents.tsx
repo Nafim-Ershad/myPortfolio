@@ -1,5 +1,4 @@
 // THIS COMPONENT CONTAINS ALL THE OTHER COMPONENTS
-import { createRoot } from "react-dom/client";
 import React from "react";
 
 import NavBarComponent from "./NavBar/NavBar.component";
@@ -9,7 +8,7 @@ import EducationContainer from "./EducationContainer";
 import JobContainer from "./JobContainer";
 import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
-import LoadingComponent from "./LoadingComponent";
+// import LoadingComponent from "./LoadingComponent";
 
 
 // const navbarComponent = document.getElementById("navbar"); 
