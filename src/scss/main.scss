@@ -91,10 +91,12 @@ body{
                         font-size: 50px;
                         text-align: center;
                         color: rgb(39,48,54);
+                        font-family: $poppins;
+                        font-display: swap;
                     }
                     p{
                         text-align: center;
-
+                        font-display: swap;
                     }
                 }
             }
