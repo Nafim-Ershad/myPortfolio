@@ -7,7 +7,7 @@ const AboutContainerComponent = () => {
   return (
     <div className="whole-container">
         <div className="photo-container" data-aos="fade-right">
-            <img src="./assets/images/my-photo.jpg" alt="my-pic" className="photo" />
+            <img src="./assets/images/my-photo.webp" alt="my-pic" className="photo" />
         </div>
         <div className="about-me-container" data-aos="fade-left">
             <div className="about-me">
