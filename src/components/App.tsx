@@ -38,8 +38,8 @@ function App(){
                         </svg>
                         </div>
                         <div className="info-container">
-                        <h1 data-aos="slide-up">Nafim Ershad</h1>
-                        <p data-aos="slide-up">A web developer, an engineer and a tech enthusiast</p>
+                            <h1 >Nafim Ershad</h1>
+                            <p>A web developer, an engineer and a tech enthusiast</p>
                         </div>
                     </div>
                 </section>

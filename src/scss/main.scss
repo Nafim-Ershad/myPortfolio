@@ -94,10 +94,23 @@ body{
                         color: rgb(39,48,54);
                         font-family: $poppins;
                         font-display: swap;
+                        opacity: 0;
+                        animation-name: fadeIn;
+                        animation-duration: 500ms;
+                        animation-fill-mode: forwards;
+                        animation-direction: normal;
+                        animation-timing-function: linear;
                     }
                     p{
                         text-align: center;
                         font-display: swap;
+                        opacity: 0;
+                        animation-name: fadeIn;
+                        animation-delay: 500ms;
+                        animation-duration: 750ms;
+                        animation-fill-mode: forwards;
+                        animation-direction: normal;
+                        animation-timing-function: linear;
                     }
                 }
             }
@@ -257,7 +270,7 @@ body{
         background-color: $primaryColor;
         cursor: pointer;
         text-decoration: none;
-        z-index: 10;
+        z-index: 1000;
         transition: background-color 500ms ease-in-out;
         span{
             width: 90%;
