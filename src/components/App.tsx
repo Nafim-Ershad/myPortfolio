@@ -65,7 +65,7 @@ function App(){
                     <SkillContainerComponent/>
                 </section>
                 <section id="projects">
-                    <h1 className="title">PERSONAL PROJECTS</h1>
+                    <h2 className="title">PERSONAL PROJECTS</h2>
                     <div id="project-component">
                         <ProjectContainer/>
                     </div>

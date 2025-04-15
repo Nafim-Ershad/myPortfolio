@@ -62,9 +62,9 @@ function ProjectCard({project, num, current}: Project_Card){
     return (
         <div className="card-bg" style={myStyles}>
             <div className="project-card-container" ref={ref}>
-                <h2 className="card-title">
+                <h3 className="card-title">
                     {project.name}
-                </h2>
+                </h3>
                 <span className="short-description">
                     {project.s_desc}
                 </span>

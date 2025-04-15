@@ -11,7 +11,7 @@ const AboutContainerComponent = () => {
         </div>
         <div className="about-me-container" data-aos="fade-left">
             <div className="about-me">
-                <h1>ABOUT ME</h1>
+                <h2>ABOUT ME</h2>
                 <div className="paragraph-container">
                     <p>
                         <span>Hi, I’m Nafim Ershad 👋</span><br/>
