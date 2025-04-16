@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     overflow-x: hidden;
-    &::after{
+    &::after{                                                                   // The blurrs on the left side
         content: '';
         position: absolute;
         right: 0;
@@ -14,7 +14,7 @@
         pointer-events: none;
     }
 
-    &::before{
+    &::before{                                                                 // The blurrs on the right side
         content: '';
         position: absolute;
         left: 0;
@@ -27,7 +27,7 @@
     }
     .carousel-tracker{
         position: relative;
-        left: 25%;
+        left: 25%;                                                              // So that the first one starts from the middle
         min-width: 2000px;
         display: flex;
         align-items: center;
