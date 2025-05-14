@@ -236,6 +236,18 @@
   ],
   "experience": [
     {
+      "title": "Junior Software Engineer",
+      "dept": "Engineering",
+      "company": "Ollyo",
+      "from": "May, 2025",
+      "to": "Present",
+      "works": [
+        "Develop themes and template for droip",
+        "Finding bugs on droip"
+      ],
+      "URL": "https://ollyo.com/"
+    },
+    {
       "title": "Technical Executive",
       "dept": "Quality Assurance",
       "company": "Astra Airways Ltd.",
@@ -245,7 +257,8 @@
         "Inspected an ATR72-212 aircraft before scheduled flight",
         "Researched aircraft compliance regulations set by the aviation authority of the country",
         "Documented everything done related to aircraft and the organization"
-      ]
+      ],
+      "URL": "https://airastra.com/"
     },
     {
       "title": "Trainee Engineer Intern",
@@ -257,7 +270,8 @@
         "Gained knowledge on the industry standards and how the industry operates",
         "Had hands on experience on the NDT process of aircraft structure",
         "Gained experience in reading and understanding the aircraft documentation such as AMM, ANO, CAR etc."
-      ]
+      ],
+      "URL": "https://www.biman-airlines.com/"
     }
   ]
 }

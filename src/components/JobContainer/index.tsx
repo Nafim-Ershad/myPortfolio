@@ -10,7 +10,8 @@ type ExpType = {
     company: string,
     from: string,
     to: string,
-    works: string[]
+    works: string[],
+    URL: string
 }
 
 const { experience } = JSON.parse(JSON.stringify(json));
@@ -21,20 +22,20 @@ function Index(): React.ReactNode {
         {
             experience.map((exp: ExpType) => {
                 return(
-                    <div className="job-container" data-aos="fade-up">
+                    <div className="job-container" data-aos="fade-up" key={Math.random() * 10}>
                         <div className="job-heading">
                             <div className="job-title">
                                 <div className="name">{exp.title}</div>
                                 {exp.dept && <div className="dept">, {exp.dept}</div>}
                             </div>
                             <div className="job-subtitle">
-                                <div className="company-name">{exp.company}</div>
+                                <a className="company-name" href={exp.URL}>{exp.company}</a>
                                 <div className="timeline">{exp.from} - {exp.to}</div>
                             </div>
                         </div>
                         <ul className="job-description">
                             {
-                                exp.works.map((work) => <li>{work}</li>)
+                                exp.works.map((work) => <li key={Math.random() * 100}>{work}</li>)
                             }
                         </ul>
                     </div>

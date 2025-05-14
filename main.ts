@@ -32,6 +32,12 @@ const tween = new KUTE.fromTo(
 
 tween.start();
 
+let last_scroll = 0;
+
+window.onscroll = function(){
+    console.log(window.scrollY);
+}
+
 // ALERT MESSAGE FOR NON-MOBILE FRIENDLY DESIGN
 
 // if(screen.width < 1360){

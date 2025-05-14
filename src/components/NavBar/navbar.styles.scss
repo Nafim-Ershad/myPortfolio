@@ -1,7 +1,6 @@
 .desktop_nav{
     width: 25%;
     height: 100%;
-    padding: 0 0.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +34,7 @@
         --hamburger-gap: 6px;
         --foreground: #333;
         --background: white;
-        --hamburger-margin: 8px;
+        --hamburger-margin: 21px;
         --animation-timing: 200ms ease-in-out;
         --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
         --mobile-nav-width: 25rem;

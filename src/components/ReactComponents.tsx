@@ -1,4 +1,9 @@
 // THIS COMPONENT CONTAINS ALL THE OTHER COMPONENTS
+
+
+
+// ************************************* LEGACY CODE *************************************
+
 import React from "react";
 
 import NavBarComponent from "./NavBar/NavBar.component";
