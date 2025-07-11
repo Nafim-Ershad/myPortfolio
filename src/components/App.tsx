@@ -14,9 +14,28 @@ import LoadingComponent from "./LoadingComponent";
 
 function App(){
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY) {
+            setShowNavbar(false); // Hide navbar when scrolling down
+        } else {
+            setShowNavbar(true); // Show navbar when scrolling up
+        }
+        setLastScrollY(currentScrollY);
+    };
     useEffect(() => {
         setIsLoading(false);
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScrollY]);
 
     return(
         (
@@ -24,21 +43,13 @@ function App(){
             <LoadingComponent/> 
             :
             <>
-                <nav id="navbar">
+                <nav id="navbar" style={{transform: `${showNavbar ? 'translateY(0)' : 'translateY(-100%)'}`}}>
                     <NavBarComponent/>
                 </nav>
                 <section id="hero">
                     <div className="hero-container">
                         <div className="wave-container">
                         <AnimatedWave/>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 50 1200 500">
-                            <path id="wave1" fill="#273036" fillOpacity="1"
-                            d="M0,160L48,154.7C96,149,192,139,288,133.3C384,128,480,128,576,128C672,128,768,128,864,133.3C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                            </path>
-                            <path id="wave2" style={{ visibility: 'hidden' }} fill="#273036" fillOpacity="1"
-                            d="M0,96L48,96C96,96,192,96,288,117.3C384,139,480,181,576,202.7C672,224,768,224,864,208C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                            </path>
-                        </svg> */}
                         </div>
                         <div className="info-container">
                             <h1 >Nafim Ershad</h1>
