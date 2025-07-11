@@ -14,28 +14,10 @@ import LoadingComponent from "./LoadingComponent";
 
 function App(){
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [showNavbar, setShowNavbar] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
 
-    const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > lastScrollY) {
-            setShowNavbar(false); // Hide navbar when scrolling down
-        } else {
-            setShowNavbar(true); // Show navbar when scrolling up
-        }
-        setLastScrollY(currentScrollY);
-    };
     useEffect(() => {
         setIsLoading(false);
     }, []);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [lastScrollY]);
 
     return(
         (
@@ -43,7 +25,7 @@ function App(){
             <LoadingComponent/> 
             :
             <>
-                <nav id="navbar" style={{transform: `${showNavbar ? 'translateY(0)' : 'translateY(-100%)'}`}}>
+                <nav id="navbar">
                     <NavBarComponent/>
                 </nav>
                 <section id="hero">

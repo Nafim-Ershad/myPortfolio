@@ -1,5 +1,5 @@
 import React from 'react';
-import "./AboutContainer.component.scss";
+import "./AboutContainer.styles.scss";
 
 import resume from "../../../src/assets/files/Nafim Ershad Inan.pdf";
 
