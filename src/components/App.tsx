@@ -8,9 +8,11 @@ import EducationContainer from "./EducationContainer";
 import JobContainer from "./JobContainer";
 import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
-// import AnimatedWave from "./AnimatedWave";
-
 import LoadingComponent from "./LoadingComponent";
+
+// import AnimatedWave from "./AnimatedWave";
+// import NoiseAbstraction from "./Noise Abstraction";
+import LiquidLights from "./LiquidLights";
 
 function App(){
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -33,6 +35,9 @@ function App(){
                         {/* <div className="wave-container">
                         <AnimatedWave/>
                         </div> */}
+                        <div className="canvas-container">
+                            <LiquidLights/>
+                        </div>
                         <div className="info-container">
                             <h1 >Nafim Ershad</h1>
                             <p>A web developer, an engineer and a tech enthusiast</p>
