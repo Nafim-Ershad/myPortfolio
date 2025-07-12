@@ -8,7 +8,7 @@ import EducationContainer from "./EducationContainer";
 import JobContainer from "./JobContainer";
 import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
-import AnimatedWave from "./AnimatedWave";
+// import AnimatedWave from "./AnimatedWave";
 
 import LoadingComponent from "./LoadingComponent";
 
