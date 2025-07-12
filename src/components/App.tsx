@@ -30,9 +30,9 @@ function App(){
                 </nav>
                 <section id="hero">
                     <div className="hero-container">
-                        <div className="wave-container">
+                        {/* <div className="wave-container">
                         <AnimatedWave/>
-                        </div>
+                        </div> */}
                         <div className="info-container">
                             <h1 >Nafim Ershad</h1>
                             <p>A web developer, an engineer and a tech enthusiast</p>
@@ -67,7 +67,7 @@ function App(){
                     </div>
                 </section>
                 <a id="contact-container" href="./pages/contact/index.html">
-                <span className="material-symbols-outlined">chat</span>
+                    <span className="material-symbols-outlined">chat</span>
                 </a>
             </>
         )

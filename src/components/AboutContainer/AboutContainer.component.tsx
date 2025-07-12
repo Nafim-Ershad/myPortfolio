@@ -1,7 +1,7 @@
 import React from 'react';
 import "./AboutContainer.styles.scss";
 
-import resume from "../../../src/assets/files/Nafim Ershad Inan.pdf";
+import resume from "../../../src/assets/files/Nafim_Ershad_Inan.pdf";
 
 const AboutContainerComponent = () => {
   return (

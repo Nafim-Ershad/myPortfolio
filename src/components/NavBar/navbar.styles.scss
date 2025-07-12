@@ -1,20 +1,32 @@
 .desktop_nav{
-    width: 25%;
+    position: relative;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    
+    column-gap: 24px;
     li{
         list-style: none;
         a{
+            padding-bottom: 4px;
+            border-bottom: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 4px;
             text-decoration: none;
             mix-blend-mode: hard-light; 
             color: black;
             font-size: 16px;
             text-transform: uppercase;
-            
+            &:hover {
+                border-color: black;
+            }
+
+            svg{
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 }
