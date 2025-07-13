@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    padding: 24px 16px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -11,8 +12,19 @@
     }
 }
 
-@media screen and (max-width: 960px){
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 420px){
     .project-container{
+        height: 450px;
         padding: 0;
         display: block;
         overflow: hidden;

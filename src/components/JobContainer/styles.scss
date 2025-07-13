@@ -53,7 +53,7 @@
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 640px){
     .job-container{  
         gap: 1rem;
         &::after{
@@ -65,9 +65,14 @@
         .job-heading{
             gap: 0.15rem;
             .job-title{
+                margin-bottom: 14px;
                 gap: 0.1rem;
+                flex-wrap: wrap;
                 font-size: 0.75rem;
                 letter-spacing: 0.05rem;
+                div {
+                    width: fit-content;
+                }
             }
             .job-subtitle{   
                 font-size: 0.6rem;

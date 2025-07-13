@@ -52,3 +52,34 @@
         height: 500px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    #app {
+        .file-type_container {
+            width: 100%;
+            padding: 16px;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 16px;
+            .file-type {
+                width: 100px;
+                height: 80px;
+                border: 1px solid black;
+                border-radius: 12px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &.active {
+                    border-color: rgba(162, 0, 255, 1);
+                    box-shadow: rgba(162, 0, 255, 0.2) 0px 8px 24px;
+                    color: rgba(162, 0, 255, 1);
+                }
+            }
+        }
+    }
+}
