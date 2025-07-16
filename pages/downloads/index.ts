@@ -1,11 +1,14 @@
 import "../../src/scss/downloads.scss";
 
-import cv from '../../src/assets/files/Nafim_Ershad_Inan.pdf';
+import cv from '../../src/assets/files/Nafim_Ershad_Inan_Academic.pdf';
 import certificate from '../../src/assets/files/Nafim_Ershad_Inan_B.Sc_Certificate.pdf';
 import transcript from '../../src/assets/files/Nafim_Ershad_Inan_B.Sc_Transcript.pdf';
+import ielts from '../../src/assets/files/Nafim_Ershad_Inan_IELTS.pdf';
+import gre from '../../src/assets/files/Nafim_Ershad_Inan_GRE.pdf';
+import dbf from '../../src/assets/files/Nafim_Ershad_Inan_DBF.pdf';
 
 interface iState {
-    activeTab: 'cv' | 'certificate' | 'transcript'
+    activeTab: 'cv' | 'certificate' | 'transcript' | 'ielts' | 'gre' | 'dbf'
 }
 
 interface iStateManager {
@@ -59,6 +62,18 @@ window.onload = () => {
             tabs[2].classList.add('active');
             iframe.src = transcript;
             break;
+        case 'ielts':
+            tabs[3].classList.add('active');
+            iframe.src = ielts;
+            break;
+        case 'gre':
+            tabs[4].classList.add('active');
+            iframe.src = gre;
+            break;
+        case 'dbf':
+            tabs[5].classList.add('active');
+            iframe.src = dbf;
+            break;
         default:
             break;
     }
@@ -80,6 +95,18 @@ tabs.forEach((tab, idx) => {
             case 2:
                 stateManager.setState({...stateManager.getState(), activeTab: 'transcript'});
                 iframe.src = transcript;
+                break;
+            case 3:
+                stateManager.setState({...stateManager.getState(), activeTab: 'ielts'});
+                iframe.src = ielts;
+                break;
+            case 4:
+                stateManager.setState({...stateManager.getState(), activeTab: 'gre'});
+                iframe.src = gre;
+                break;
+            case 5:
+                stateManager.setState({...stateManager.getState(), activeTab: 'dbf'});
+                iframe.src = dbf;
                 break;
             default:
                 break;
