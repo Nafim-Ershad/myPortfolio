@@ -1,18 +1,18 @@
 // THIS COMPONENT CONTAINS ALL THE OTHER COMPONENTS
 import React, { useEffect, useState } from "react";
 
-import NavBarComponent from "./NavBar/NavBar.component";
-import SkillContainerComponent from "./SkillContainer/SkillContainer.component";
-import AboutContainerComponent from "./AboutContainer/AboutContainer.component";
-import EducationContainer from "./EducationContainer";
-import JobContainer from "./JobContainer";
-import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
+// import NavBarComponent from "./NavBar/NavBar.component";
+// import SkillContainerComponent from "./SkillContainer/SkillContainer.component";
+// import AboutContainerComponent from "./AboutContainer/AboutContainer.component";
+// import EducationContainer from "./EducationContainer";
+// import JobContainer from "./JobContainer";
+// import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
 
 import LoadingComponent from "./LoadingComponent";
 
-// import AnimatedWave from "./AnimatedWave";
-// import NoiseAbstraction from "./Noise Abstraction";
-import LiquidLights from "./LiquidLights";
+// // import AnimatedWave from "./AnimatedWave";
+// // import NoiseAbstraction from "./Noise Abstraction";
+// import LiquidLights from "./LiquidLights";
 import UnderConstruction from "./UnderConstruction";
 
 function App(){

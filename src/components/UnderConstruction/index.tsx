@@ -11,7 +11,10 @@ const UnderConstruction = (props: HTMLAttributes<HTMLDivElement>) => (
             alignItems: "center",
             color: "#ffcc00",
             backgroundColor: "#1a1a1a", 
-        }}>
+            ...(props.style || {})
+        }}
+        {...props}
+    >
         <h1>🚧 Under Construction 🚧</h1>
         <p>This section is currently under construction. Please check back later!</p>
     </div>
