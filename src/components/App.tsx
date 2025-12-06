@@ -13,6 +13,7 @@ import LoadingComponent from "./LoadingComponent";
 // import AnimatedWave from "./AnimatedWave";
 // import NoiseAbstraction from "./Noise Abstraction";
 import LiquidLights from "./LiquidLights";
+import UnderConstruction from "./UnderConstruction";
 
 function App(){
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -27,14 +28,11 @@ function App(){
             <LoadingComponent/> 
             :
             <>
-                <nav id="navbar">
+                {/* <nav id="navbar">
                     <NavBarComponent/>
                 </nav>
                 <section id="hero">
                     <div className="hero-container">
-                        {/* <div className="wave-container">
-                        <AnimatedWave/>
-                        </div> */}
                         <div className="canvas-container">
                             <LiquidLights/>
                         </div>
@@ -73,7 +71,8 @@ function App(){
                 </section>
                 <a id="contact-container" href="./pages/contact/index.html">
                     <span className="material-symbols-outlined">chat</span>
-                </a>
+                </a> */}
+                <UnderConstruction />
             </>
         )
     )
