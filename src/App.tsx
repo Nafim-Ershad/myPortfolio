@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router';
 
 import { AppProvider } from './context/AppContext';

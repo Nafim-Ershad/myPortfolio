@@ -23,6 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# File
+ReactComponents_Legacy.tsx
 
 # Ignored Folder
 extras/
+Legacy Components/
+Unused Animations/
+Legacy Styles/
