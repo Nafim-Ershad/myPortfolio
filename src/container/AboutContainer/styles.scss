@@ -1,0 +1,126 @@
+@use "../../scss/variables" as *;
+
+.about-container{
+    position: relative;
+    padding: 1.67em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: max(3.33em, 64px);
+
+    h1{
+        font-size: max(56px, 3.33em);
+        font-weight: 600;
+        line-height: 1.1em;
+        color: $Primary100;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: max(1.67em, 24px);
+        h2 {
+            position: relative;
+            font-size: max(32px, 2.25em);
+            font-weight: 500;
+            letter-spacing: -0.05em;
+            line-height: 1em;
+            color: $Primary100;
+
+            &.underline::after {
+                content: '';
+                position: absolute;
+                inset: auto auto -0.2604166667vw 0;
+                height: 1px;
+                width: 95vw;
+                background-color: $Primary100;
+                animation-name: increaseWidth;
+                animation-duration: 450ms;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-size: max(24px, 1.45em);
+            font-weight: 400;
+            letter-spacing: -0.025em;
+            line-height: 1em;
+            color: $Primary100;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: max(8px, 0.4167em);
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                row-gap: max(1.25em, 24px);
+
+                &.full-width {
+                    width: 100%;
+                }
+
+                li {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    row-gap: max(0.625em, 12px);
+                }
+            }
+
+            .grid {
+                &.two-columns {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: max(0.833em, 16px);
+                }
+
+                .h-self-end {
+                    justify-self: end;
+                }
+
+                .h-self-start {
+                    justify-self: start;
+                }
+            }
+
+            p {
+                font-size: max(16px, 0.833em);
+                font-weight: 400;
+                letter-spacing: normal;
+                line-height: 1.25em;
+                text-align: justify;
+                color: $Primary100;
+                
+                &.italic {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes increaseWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95vw;
+    }
+}

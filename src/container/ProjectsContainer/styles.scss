@@ -1,0 +1,64 @@
+@use "../../scss/variables" as *;
+
+.projects-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.833vw 0.9375vw;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+
+    a.back-home {
+        position: absolute;
+        inset: -8% auto auto 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0.52083vw;
+        font-size: max(0.833em, 14px);
+        line-height: 1.125em;
+        color: $Primary100;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .projects-container{
+        width: 100%;
+        padding: 0 32px;
+        .wrapper {
+            width: 50%;
+        }
+        a.back-home {
+            inset: -24px auto auto 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .projects-container{
+        width: 90%;
+        height: 100%;
+        .wrapper {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow: scroll;
+            row-gap: 12px;
+        }
+        a.back-home {
+            inset: -32px auto auto 12.5%;
+            z-index: 5;
+        }
+    }
+}

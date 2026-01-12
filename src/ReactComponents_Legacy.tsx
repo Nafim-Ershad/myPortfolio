@@ -6,12 +6,12 @@
 
 import React from "react";
 
-import NavBarComponent from "./NavBar/NavBar.component";
-import SkillContainerComponent from "./SkillContainer/SkillContainer.component";
-import AboutContainerComponent from "./AboutContainer/AboutContainer.component";
-import EducationContainer from "./EducationContainer";
-import JobContainer from "./JobContainer";
-import ProjectContainer from "./ProjectContainer/ProjectContainer.component";
+import NavBarComponent from "./components/NavBar/NavBar.component";
+import SkillContainerComponent from "./components/SkillContainer/SkillContainer.component";
+import AboutContainerComponent from "./components/AboutContainer/AboutContainer.component";
+import EducationContainer from "./components/EducationContainer";
+import JobContainer from "./components/JobContainer";
+import ProjectContainer from "./components/ProjectContainer/ProjectContainer.component";
 
 // import LoadingComponent from "./LoadingComponent";
 

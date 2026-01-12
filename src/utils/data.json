@@ -1,5 +1,18 @@
-{
-  "projects": [
+{ "projects": [
+    {
+      "name": "Secure Telemetry Transmission Simulation",
+      "s_desc": "A simple simulation of secure telemetry transmission using XORCipher encryption with integrity checks",
+      "description": "This project simulates secure telemetry transmission by implementing XORCipher encryption along with integrity checks. The simulation demonstrates how telemetry data can be securely transmitted over a noisy network while ensuring that the data remains unaltered during transit. The project is developed using Python and showcases the principles of encryption and data integrity in a practical application.",
+      "git": "https://github.com/Nafim-Ershad/XORCipher"
+    },
+    {
+      "name": "FlightGear MFD",
+      "s_desc": "A Multi-Functional Display developed for FlightGear Flight Simulator",
+      "description": "This is a Multi-Functional Display (MFD) developed as a plugin for the FlightGear Flight Simulator. The MFD provides various functionalities such as navigation, engine monitoring, and system status display. It is designed to enhance the flight simulation experience by providing pilots with essential information in an easy-to-read format. The MFD is built using NodeJs and HTML Canvas, and integrates seamlessly with the FlightGear simulator through UDP.",
+      "git": "https://github.com/Nafim-Ershad/fg_mfd"
+    }
+  ],
+  "portfolio": [
     {
       "name": "Image Viewer",
       "s_desc": "An electron app for viewing images",
@@ -63,7 +76,7 @@
     {
       "name": "Pong Game",
       "description": "Its a pong game made using the canvas element of HTML.",
-      "s_desc": "Pong game with basic functionalities. (WIP)",
+      "s_desc": "Pong game with basic functionalities.",
       "src": [
         "assets/svg/logos/js.svg",
         "assets/svg/logos/vite.svg"

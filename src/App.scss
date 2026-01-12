@@ -1,0 +1,19 @@
+@use './scss/_variables.scss' as *;
+
+.main-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 4.1667vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Primary20;
+}
+
+@media screen and (max-width: 991px) {
+    .main-section {
+        padding: 8.07265vw 0;
+    }
+}

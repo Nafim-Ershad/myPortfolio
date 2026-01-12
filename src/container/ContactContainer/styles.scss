@@ -1,0 +1,154 @@
+@use "../../scss/variables" as *;
+
+.contact-container {
+    position: relative;
+    width: 55%;
+    border: max(2px, 0.1042em) solid $Primary20;
+    border-radius: 2.5em;
+    padding: max(32px, 1.667em) max(40px, 2.0833em); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: max(32px, 1.667em);
+        h1 {
+            color: $Primary100;
+            font-size: 3.33em;
+            line-height: 1.0625em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            row-gap: max(16px, 0.833em);
+            .form-group{
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                row-gap: max(16px, 0.833em);
+                input{
+                    width: 100%;
+                    padding: 0.521vw;
+                    border: 1px solid $Primary70;
+                    border-radius: max(10px, 0.521em);
+                    background: transparent;
+                    color: $Primary100;
+                    outline: none;
+                }  
+                textarea{
+                    width: 100%;
+                    padding: max(10px, 0.521em);
+                    border: 1px solid $Primary70;
+                    border-radius: max(10px, 0.521em);
+                    background: transparent;
+                    color: $Primary100;
+                    resize: vertical;
+                    outline: none;
+                }  
+                label {
+                    width: fit-content;
+                    font-size: max(16px, 0.9375em);
+                    line-height: 1.041em;
+                    text-transform: uppercase;
+                    color: $Primary90;
+                }
+            }
+
+            button{
+                width: 100%;
+                margin: 8px 0 0 0;
+                padding: max(14px, 0.73em) max(18px, 0.9375em);
+                background: $Primary100;
+                border-radius: max(10px, 0.521em);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: max(10px, 0.521em);
+                font-size: max(16px, 0.9375em);
+                line-height: 1.33em;
+                color: $White100;
+                cursor: pointer;
+
+                &:hover{
+                    background: $Primary80;
+                }
+            }
+        }
+    }
+
+    a {
+        position: absolute;
+        inset: max(-48px, -2.5em) auto auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: max(10px, 0.52083em);
+        font-size: max(14px, 0.833em);
+        line-height: 1.125em;
+        color: $Primary100;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact-container {
+        width: 90%;
+        border-radius: 24px;
+        padding: 18px 28px; 
+        .form-container {
+            row-gap: 24px;
+            h1 {
+                font-size: 32px;
+            }
+
+            form{
+                row-gap: 12px;
+                .form-group{
+                    row-gap: 8px;
+                    input{
+                        padding: 6px;
+                        border-radius: 10px;
+                    }  
+                    textarea{
+                        padding: 8px;
+                        border-radius: 8px;
+                    }  
+                    label {
+                        font-size: 16px;
+                        line-height: 1.041em;
+                    }
+                }
+
+                button{
+                    margin: 16px 0 0 0;
+                    padding: max(10px, 0.73em);
+                    border-radius: 8px;
+                    column-gap: 8px;
+                    font-size: 16px;
+
+                    &:hover{
+                        background: $Primary80;
+                    }
+                }
+            }
+        }
+
+        a {
+            inset: -48px auto auto 0;
+            column-gap: 10px;
+            font-size: 16px;
+            line-height: 1.125em;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@use "../../scss/variables" as *;
+
+.canvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: clip;
+    z-index: -1;
+
+    .follower {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(circle, $Primary100, $Primary70);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: left 0.12s ease-out, top 0.12s ease-out;
+        opacity: 0.25;
+        filter: blur(2.1vw);
+    }
+}

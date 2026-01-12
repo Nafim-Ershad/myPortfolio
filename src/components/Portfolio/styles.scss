@@ -1,0 +1,99 @@
+@use "../../scss/variables" as *;
+
+.portfolio-container {
+    position: fixed;
+    inset: 0 0;
+    width: 100%;
+    height: 100vh;
+    padding: 3.33vw 3.33vw 6.25vw 3.33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    row-gap: 1.667vw;
+    background: transparent;
+    .x-container{
+        width: 2.5vw;
+        aspect-ratio: 1;
+        border-radius: 0.521vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $Accent100;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            background: $Primary100;
+            color: $White100;
+        }
+
+        svg {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .portfolio-wrapper{
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        padding: 1.667vw 1.25vw;
+        border-radius: 0.833vw;
+        background: $Accent70;
+        overflow-y: auto;
+        .portfolio-card-group {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fit, 1fr);
+            gap: 1.04167vw;
+            justify-items: stretch;
+            align-items: stretch;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+     .portfolio-container {
+        padding: 36px 36px 48px 36px;
+        row-gap: 16px;
+        .x-container{
+            width: 36px;
+            border-radius: 16px;
+        }
+
+        .portfolio-wrapper{
+            padding: 28px 16px;
+            .portfolio-card-group {
+                width: 100%;
+                border-radius: 16px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-container {
+        height: 100vh;
+        padding: 24px 24px 36px 24px;
+        row-gap: 16px;
+        .x-container{
+            width: 32px;
+        }
+
+        .portfolio-wrapper{
+            padding: 18px 12px;
+            .portfolio-card-group {
+                width: 100%;
+                border-radius: 16px;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 16px;
+                overflow-y: scroll;
+            }
+        }
+    }
+}
