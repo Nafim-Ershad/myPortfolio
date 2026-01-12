@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # File
-ReactComponents_Legacy.tsx
+src/ReactComponents_Legacy.tsx
 
 # Ignored Folder
 extras/
