@@ -1,4 +1,4 @@
-import "../../src/scss/contact.scss";
+// import "../../src/scss/contact.scss";
 
 const formInput = document.querySelectorAll<HTMLInputElement>(".form-container form .form-group input");
 const formLabel = document.querySelectorAll<HTMLInputElement>(".form-container form .form-group label");

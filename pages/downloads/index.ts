@@ -1,4 +1,4 @@
-import "../../src/scss/downloads.scss";
+// import "../../src/scss/downloads.scss";
 
 import cv from '../../src/assets/files/Nafim_Ershad_Inan_Academic.pdf';
 import certificate from '../../src/assets/files/Nafim_Ershad_Inan_B.Sc_Certificate.pdf';
